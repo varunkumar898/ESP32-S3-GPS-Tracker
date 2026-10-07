@@ -1,0 +1,35 @@
+idf_component_register(
+    SRCS
+        "../src/main.c"
+        "../src/ESP32S3_Driver.c"
+        "../src/GPIO_Driver.c"
+        "../src/UART_Driver.c"
+        "../src/GPS_Driver.c"
+        "../src/GPS_WebServer.c"
+        "../src/SPI_Driver.c"
+        "../src/I2C_Driver.c"
+        "../src/ADC_Driver.c"
+        "../src/TWAI_Driver.c"
+        "../src/WIFI_Driver.c"
+        "../src/ESPNOW_Driver.c"
+        "../src/TCP_Driver.c"
+        "../src/UDP_Driver.c"
+        "../src/HTTP_Driver.c"
+        "../src/MQTT_Driver.c"
+        "../src/BLE_Driver.c"
+    INCLUDE_DIRS "../inc"
+    REQUIRES
+        esp_driver_gpio
+        esp_driver_uart
+        esp_driver_spi
+        esp_driver_i2c
+        esp_adc
+        esp_driver_twai
+        esp_wifi
+        esp_event
+        esp_netif
+        nvs_flash
+        esp_http_server
+        mqtt
+        bt
+)
